@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="col-md-4 col-md-offset-4">
+	<h2>Cadastro de imóveis</h2>
+<form action="" method="POST">
+	{{form.csrf_token}}
+	<div class="form-group">
+		<label>Matricula</label>
+		{{form.matricula(class="form-control", placeholder="Matricula_móvel")}}
+
+	</div>
+	<div class="form-group">
+		<label>Tipo imóvel</label>
+		{{form.tipoImovel(class="form-control")}}
+	</div>
+
+	<div class="form-group">
+		<label>Endereço</label>
+		{{form.enderecoUser(class="form-control")}}
+	</div>
+
+    <!-- ESSA DIV SERÁ DO SELECT, DEPOIS PESQUISAR COMO COLOCAR ELA NOS PADRÕES DO FLASK 		<label>Escolha a área do imóvel</label><br>
+		<input type="radio" name="opcao" id="option1" value="option1"> M2 </input><br>
+		<input type="radio" name="opcao" id="option2" value="option2"> HA </input><br>-->
+	<div class="form-group">
+		<label>Area do imóvel</label>
+		{{form.areaImovel}}
+		<h2>Latitude</h2><br>
+		{{form.latUser}}
+		<h2>Longitude</h2>
+		{{form.longUser}}
+		
+		
+
+<script>
+
+		 if('geolocation' in navigator)
+      {
+        navigator.geolocation.getCurrentPosition(function(position)
+        {
+          console.log(position)
+          
+
+          latUser = position.coords.latitude
+          longUser = position.coords.longitude
+
+          console.log(latUser + " " + longUser)
+
+
+      	document.getElementById('latUser').value = latUser;
+      	document.getElementById('longUser').value = longUser;
+	  
+
+	      
+
+	
+
+
+        }, function(error)
+        {
+          console.log(error)
+        })
+      
+
+      }
+      else
+      {
+        alert('Deu não irmão')
+      }
+
+
+
+
+	
+
+	   
+
+
+	</script>
+
+	</div>
+
+	
+
+	<button type="submit" class="btn btn-default">Cadastrar</button>
+</form>
+<div>
+
+{% endblock %}
