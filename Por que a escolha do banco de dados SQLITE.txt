@@ -1,1 +1,1 @@
-Eu utilizei o SQLITE, pois a API criada n„o È muito grande È pela vantagem de utilizar totalmente offline, pelo fato de que fiz grande parte do projeto dentro de um onibus. 
+Eu utilizei o SQLITE, pois a API criada n√£o e muito grande √© pela vantagem de utilizar totalmente offline, pelo fato de que fiz grande parte do projeto dentro de um onibus. 
