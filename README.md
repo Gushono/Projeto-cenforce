@@ -30,4 +30,4 @@ MD;
 
 ## Como executar a api?
 
-### 
+### Ao estar na pasta e com python já instalado em seu computador, utilize o run.py runserver para fazer a execução do servidor. Após fazer isso, o ip http://127.0.0.1:5000/ estará ativo com a aplicação rodando
