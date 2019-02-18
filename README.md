@@ -31,3 +31,14 @@ MD;
 ## Como executar a api?
 
 ### Ao estar na pasta e com python já instalado em seu computador, utilize o run.py runserver para fazer a execução do servidor. Após fazer isso, o ip http://127.0.0.1:5000/ estará ativo com a aplicação rodando
+
+## Desafios encontrados ao desenvolver do projeto
+
+Primeiramente gostaria de agradecer por ter a chance de ir em busca desse emprego e desse desafio que me gerou muito aprendizado. 
+
+Ao desenvolver do projeto encontrei muitas dificuldades, pois eu nunca havia tido contado com PYTHON e nem com o framework FLASK, 
+então as coisas estavam bem nebulosas em minha cabeça. Para conseguir aprender, eu ví muitas video aulas e dei o melhor que pude para entregar esse projeto finalizado, e apesar de tanto esforço, eu não consegui concluir todas as partes propostas. 
+
+Apesar de não finalizar o que foi pedido, fico muito feliz pelo meu resultado e de como cheguei até aqui, afinal, foram longas horas sentadas em frente ao computador fazendo o que amo! 
+
+Obrigado pela oportunidade!
