@@ -12,6 +12,9 @@ Projeto para entrevista de emprego
 - [x] O código fonte deve ser armazenado em um repositório privado no github
 (https://github.com) compartilhado com usuário (cenforce). 
 
+- [x] Cadastro dos imóveis com base de dados sqlite
+- [x] Listagem dos imóveis com base de dados sqlite
+
 ## O que é esperado
 
 
