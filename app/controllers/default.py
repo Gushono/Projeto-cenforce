@@ -37,7 +37,11 @@ def cadastro():
 		cadastrar = Imovel(matricula=form.matricula.data,tipoImovel= form.tipoImovel.data, areaImovel=form.areaImovel.data,enderecoUser=form.enderecoUser.data, latUser= form.latUser.data,longUser= form.longUser.data)
 		db.session.add(cadastrar)
 		db.session.commit()
-		return "Cadastrado!"
+
+	
+
+
+		return render_template('confirmacao.html')
 		
 		
 
@@ -49,6 +53,15 @@ def cadastro():
 		
 
 
+@app.route("/listar")
+@app.route("/listar/", methods=["GET", "POST"])
+def listar():
+
+	imoveis = Imovel.query.all()
+
+
+
+	return render_template("listar.html", imoveis=imoveis)
 
 @app.route("/teste/<info>")
 @app.route("/teste", defaults={"info":None})
@@ -59,5 +72,5 @@ def teste(info):
 	#i = User("Pedro", "1234", "Pedro", "pedro@gmail.com")
 	#db.session.add(i)
 	#db.session.commit()
-	print (r.username, r.name)
+	
 	return "Ok"

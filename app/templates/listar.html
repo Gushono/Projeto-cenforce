@@ -1,0 +1,41 @@
+  {% extends 'base.html' %}
+
+
+  {% block title %}{{ super()}} - Confirmado{% endblock %}
+
+
+  {% block content %}
+
+
+ <div class="jumbotron">
+        <h1>Lista de clientes</h1>
+   		<hr>
+   		<table>
+   			<tr>
+   				<td width="200">Matricula do imóvel </td>
+   				<td width="200">Tipo do imóvel </td>
+   				<td width="200">Area do imóvel </td>
+   				<td width="200">Endereço do imóvel </td>
+   				<td width="200">Latitude </td>
+   				<td width="200">Longitude </td>
+   			</tr>
+   			{% for imovel in imoveis %}
+   			<tr>
+   				<td width="101">{{ imovel.matricula}}</td>
+   				<td width="130">{{ imovel.tipoImovel }}</td>
+   				<td width="130">{{ imovel.areaImovel }}</td>
+   				<td width="130">{{ imovel.enderecoUser }}</td>
+   				<td width="130">{{ imovel.latUser }}</td>
+   				<td width="130">{{ imovel.longUser }}</td>
+   			</tr>
+
+   			{%endfor%}
+   		</table>
+
+
+
+      </div>
+
+
+{% endblock %}  }
+
