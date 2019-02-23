@@ -53,8 +53,8 @@ def cadastro():
 		
 
 
-@app.route("/listar")
-@app.route("/listar/", methods=["GET", "POST"])
+@app.route("/listar/")
+@app.route("/listar", methods=["GET", "POST"])
 def listar():
 
 	imoveis = Imovel.query.all()

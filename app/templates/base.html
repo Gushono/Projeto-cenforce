@@ -8,8 +8,17 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
+
+    <meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="Tue, 01 Jan 2030 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
     <link rel="icon" href="../../favicon.ico">
 
+    <link rel="stylesheet" type="text/css" href="static/css/menu.css ">
+
+   
+ 
     <title>{% block title %}Enforce{% endblock %}</title>
 
     <!-- Bootstrap core CSS -->
@@ -27,17 +36,16 @@
 
   <body>
    
-    <div class="container">
-      <div class="header clearfix">
-        <nav>
-        
-          <ul>
-          <li role="presentation"><a href="/listar">Listar</a></li>
-          <li role="presentation"><a href="/cadastro"> Cadastrar</a></li>
+    <div id="menu">
+
+          <ul class="ul">
+          <li><a href="/listar">Listar</a></li>
+          <li><a href="/cadastro"> Cadastrar</a></li>
+
         </ul>
-        </nav>
+        
         <h3 class="text-muted">Projeto entrevista</h3>
-      </div>
+    </div>
 
     {% block content %}
     {% endblock %}
