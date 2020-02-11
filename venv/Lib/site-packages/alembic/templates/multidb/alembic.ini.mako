@@ -15,7 +15,7 @@ script_location = ${script_location}
 
 # max length of characters to apply to the
 # "slug" field
-#truncate_slug_length = 40
+# truncate_slug_length = 40
 
 # set to 'true' to run the environment during
 # the 'revision' command, regardless of autogenerate
@@ -43,6 +43,16 @@ sqlalchemy.url = driver://user:pass@localhost/dbname
 [engine2]
 sqlalchemy.url = driver://user:pass@localhost/dbname2
 
+[post_write_hooks]
+# post_write_hooks defines scripts or Python functions that are run
+# on newly generated revision scripts.  See the documentation for further
+# detail and examples
+
+# format using "black" - use the console_scripts runner, against the "black" entrypoint
+# hooks=black
+# black.type=console_scripts
+# black.entrypoint=black
+# black.options=-l 79
 
 # Logging configuration
 [loggers]

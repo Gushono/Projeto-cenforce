@@ -1,24 +1,15 @@
-  {% extends 'index.html' %}
+{% extends 'index.html' %}
 
 
-  {% block title %}{{ super()}} - Confirmado{% endblock %}
-  {% block content %}
+{% block title %}{{ super()}} - Confirmado{% endblock %}
+{% block content %}
 
 
+<div class="jumbotron">
+    <h1>Cadastrado com sucesso</h1>
+    <p><a class="btn btn-lg btn-success" role="button" href="/cadastro">Deseja cadastrar outro imóvel?</a></p>
+    <p><a class="btn btn-lg btn-success" role="button" href="/listar">Listar imóveis</a></p>
+</div>
 
 
-  <div class="jumbotron">
-        <h1>Cadastrado com sucesso</h1>
-   		<p><a class="btn btn-lg btn-success" role="button" href="/cadastro">Deseja cadastrar outro imóvel?</a></p>
-       <p><a class="btn btn-lg btn-success" role="button" href="/listar">Listar imóveis</a></p>
-      </div>
-
-       
-
-
-
-
-
-
-
-     {% endblock %} 
+{% endblock %}

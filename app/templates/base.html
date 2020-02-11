@@ -1,62 +1,46 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <meta http-equiv="cache-control" content="max-age=0" />
-<meta http-equiv="cache-control" content="no-cache" />
-<meta http-equiv="expires" content="Tue, 01 Jan 2030 1:00:00 GMT" />
-<meta http-equiv="pragma" content="no-cache" />
+    <meta content="max-age=0" http-equiv="cache-control"/>
+    <meta content="no-cache" http-equiv="cache-control"/>
+    <meta content="Tue, 01 Jan 2030 1:00:00 GMT" http-equiv="expires"/>
+    <meta content="no-cache" http-equiv="pragma"/>
     <link rel="icon" href="../../favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="static/css/menu.css ">
 
-   
- 
+
     <title>{% block title %}Enforce{% endblock %}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ url_for('static' , filename='css/bootstrap.min.css') }}" rel="stylesheet">
 
+</head>
+
+<body>
+
+<div id="menu">
+
+    <ul class="ul">
+        <li><a href="/listar">Listar</a></li>
+        <li><a href="/cadastro">Cadastrar</a></li>
+    </ul>
+
+    <h3 class="text-muted">Projeto entrevista</h3>
+</div>
+
+{% block content %}
+{% endblock %}
 
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-  </head>
-
-  <body>
-   
-    <div id="menu">
-
-          <ul class="ul">
-          <li><a href="/listar">Listar</a></li>
-          <li><a href="/cadastro"> Cadastrar</a></li>
-
-        </ul>
-        
-        <h3 class="text-muted">Projeto entrevista</h3>
-    </div>
-
-    {% block content %}
-    {% endblock %}
-
-
-   
-
-    </div> <!-- /container -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
-  </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+</body>
 </html>
